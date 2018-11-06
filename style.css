@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600');
+
+*{
+	padding:0;
+	margin:0;
+	box-sizing: border-box;
+	font-family: Montserrat, sans-serif;
+	scroll-behavior: smooth;
+}
+
+
+/*GENERAL STYLES*/
+nav{
+	text-transform: uppercase;
+}
+
+hr{
+	width:50px;
+	border-bottom:2px solid orange;
+}
+
+#tilador{
+	color:orange;
+	font-weight: 600;
+}
+
+.fas, .far{
+	text-shadow: 4px 4px 9px rgba(150, 150, 150, 1);
+}
+
+
+
+
+
+
+
+/*HERO STYLES*/
+.hero{
+	height:100vh;
+	display:flex;
+	justify-content: center;
+	align-items: center;
+	background-image: url('img/hero.png');
+	background-repeat: no-repeat;
+	background-size: cover;
+	position: relative;
+	background-attachment: fixed;
+
+}
+
+.innerHero{
+	z-index: 1;
+}
+
+.hero h2{
+	border-left:1px solid white;
+	padding-left:20px;
+	font-size:30px;
+	color:white;
+	text-transform: uppercase;
+}
+
+.overlay{
+	height:100%;
+	width:100%;
+	background-color:black;
+	opacity:.7;
+	position: absolute;
+}
+
+
+
+
+
+
+/*ABOUT US STYLES*/
+
+.aboutUs{
+	padding-top:50px;
+	height:100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.aboutUs p{
+	width:70%;
+	color:rgba(0,0,0,.5);
+	line-height: 2;
+	text-align: justify;
+}
+
+
+
+
+
+
+
+/*OUR ADVANTAGES STYLES*/
+
+.advantage{
+	padding:50px;
+	height:100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background: #f1f1f1
+}
+
+.advantageBlocks{
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.block{
+	padding:25px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width:250px;
+	flex-wrap: wrap;
+}
+
+.block p{
+	text-align: center;
+}
+
+.advantageParagraph p{
+	width: 80%;
+	margin:0 auto;
+	line-height: 3;
+	color:rgba(0,0,0,.5);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*MOBILE STYLES*/
+@media (max-width: 700px){
+
+/*MOBILE ABOUT US STYLES*/
+	.aboutUs{
+		height:100%;
+		width:100%;
+	}
+	.aboutUs p{
+		line-height: 1.25;
+		width:100%;
+		padding:10px;
+	}
+
+/*MOBILE OUR ADVANTAGE STYLES*/
+	.advantage{
+		height:100%;
+		text-align: center;
+	}
+	.advantageBlocks{
+		flex-direction: column;
+	}
+
+	.block{
+		padding:0;
+		width:100%;
+
+	}
+
+	.advantageParagraph p{
+		width: 100%;
+		margin:10px;
+		padding:0;
+		line-height: 1.25;
+		color:rgba(0,0,0,.5);
+		text-align: justify;
+	}
+
+
+
+}
