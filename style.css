@@ -100,7 +100,6 @@ hr{
 
 .advantage{
 	padding:50px;
-	height:100vh;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -127,13 +126,63 @@ hr{
 	text-align: center;
 }
 
-.advantageParagraph p{
-	width: 80%;
-	margin:0 auto;
-	line-height: 3;
-	color:rgba(0,0,0,.5);
+.cases{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }
 
+.cases div{
+	padding:40px;
+	position: relative;
+}
+
+.cases div img{
+	opacity:.9;
+}
+
+.cases div a{
+	color:rgba(0,0,0,.7);
+	text-decoration: none;
+}
+
+.cases div a:hover{
+	color:blue;
+}
+
+
+
+
+
+
+
+/*CONSULTATION STYLES*/
+
+.consultation{
+	padding-top:50px;
+	display:flex;
+	align-items: center;
+	flex-direction: column;
+	width:65%;
+	margin:0 auto;
+}
+
+.consultation section{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+
+.consultation section article{
+	padding:40px;
+	text-align: justify;
+}
+
+.consultation section article p{
+	color:rgba(0,0,0,.5);
+}
 
 
 
@@ -177,13 +226,25 @@ hr{
 
 	}
 
-	.advantageParagraph p{
-		width: 100%;
-		margin:10px;
+
+/*MOBILE CONSULTATION STYLES*/
+	.consultation{
+		height:100%;
+		flex-direction: column;
+	}
+
+	.consultation section{
+		width:100%;
+		margin:0;
 		padding:0;
-		line-height: 1.25;
-		color:rgba(0,0,0,.5);
-		text-align: justify;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.consultation section article{
+		padding:0px;
+		text-align: center;
 	}
 
 
